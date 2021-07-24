@@ -30,5 +30,21 @@ class HelloWorld {
         //Print the full name and age of the Person instance
         println person.getFullName()
         println person.getAge()
+
+
+        //Identify if a Person is middle-aged using a conditional
+        if(person.getAge() >= 45 && person.getAge() <= 65){
+            println person.getFullName() + " is middle-aged"
+        } else {
+            println person.getFullName() + " is " + person.getAge() + " years old"
+        }
+
+        //Define a list of persons
+        def persons =[person, new Person(firstName: "John", lastName: "Dow", age:40) ] //Auto constructor key-value
+
+        //Iterate over Person instances in list
+        for (Person p : persons){
+            println p.getFullName()
+        }
     }
 }
