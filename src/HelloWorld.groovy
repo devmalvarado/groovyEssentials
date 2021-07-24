@@ -8,15 +8,27 @@ class HelloWorld {
         //Define a typed variable
         int age = 30
         // Print variable type
-        print age.getClass()
+        println age.getClass()
         // Print variable value
-        print age
+        println age
 
         //Define a variable with dynamic typing [its called duck typing ](def java.lang.Object)
         def alias = "DevMalva"  // like var?
         // Print variable value
-        print alias
+        println alias
         // Print variable type
-        print alias.getClass()
+        println alias.getClass()
+
+        //Create a new Person class and instantiate it
+        Person person = new Person();
+
+        //There are automatically created getters & setters for public members of the class
+        person.setFirstName("Manuel")
+        person.setLastName("Alvarado")
+        person.setAge(30)
+
+        //Print the full name and age of the Person instance
+        println person.getFullName()
+        println person.getAge()
     }
 }
