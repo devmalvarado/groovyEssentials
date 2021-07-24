@@ -50,6 +50,15 @@ class HelloWorld {
         //Check exceptions are optional handle (in java are mandatory)
 
         //Converting a String into a Long data type
-        person.getFirstName().toLong()
+        try {
+            person.getFirstName().toLong()
+        }catch (NumberFormatException e){
+            assert e instanceof NumberFormatException
+            println "Incompatibles Types"
+
+        }
+
+
+
     }
 }
