@@ -46,5 +46,10 @@ class HelloWorld {
         for (Person p : persons){
             println p.getFullName()
         }
+
+        //Check exceptions are optional handle (in java are mandatory)
+
+        //Converting a String into a Long data type
+        person.getFirstName().toLong()
     }
 }
