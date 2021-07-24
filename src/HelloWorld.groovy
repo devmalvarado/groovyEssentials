@@ -58,6 +58,9 @@ class HelloWorld {
 
         }
 
+        /* Use the dropRight method to remove 2 characters from the end (new methods in groovy tah java) */
+
+        println person.getFirstName().dropRight(2)
 
 
     }
